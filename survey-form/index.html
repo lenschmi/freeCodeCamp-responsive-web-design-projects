@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Tea Survey</title>
+        <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    </head>
+
+   <body>
+        <main id="main">
+            <div id="form-container">
+                <h1 id="title">Tea Drinker's Survey Form</h1>
+                <p><i><strong>Please fill out the following information so we can best serve your tea needs!</strong></i></p>
+                <form id="survey-form" action="">
+                    <!--Text, email, and number inputs-->
+                    <div class="form-item">
+                        <label for="text">Name</label>
+                        <input id="name" type="text" value="name" placeholder="Enter your name." required>
+                    </div>
+                    <div class="form-item">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" value="email" placeholder="Enter your email." required>
+                    </div>
+                    <div class="form-item">
+                        <label for="number">Age (optional)</label>
+                        <input id="number" placeholder="Enter your age." value="age" type="number" min="0" max="120">
+                    </div>
+                    <!--Drop-down menu-->
+                    <div class="form-item">
+                        <label for="dropdown">Select the number of cups of tea you drink in a day on average</label>
+                        <select id="dropdown">
+                            <option value="0">Zero</option>
+                            <option value="one-two">One to two</option>
+                            <option value="three-four">Three to four</option>
+                            <option value="five-plus">Five or more</option>
+                        </select>
+                    </div>
+                    <!--Radio buttons-->
+                    <div class="form-item">
+                        <p class="p-form">What time of day do you usually drink tea?</p>
+                        <label for="morning"> <input id="morning" value="morning" name="radio" type="radio" class="radio">Morning</label>
+                        <label for="afternoon"> <input id="afternoon" value="afternoon" name="radio" type="radio" class="radio">Afternoon</label>
+                        <label for="evening"> <input id="evening" value="evening" name="radio" type="radio" class="radio">Evening</label>
+                        <label for="all-day"> <input id="all-day" value="all-day" name="radio" type="radio" class="radio">All day!</label>
+                    </div>
+                    <!--Checkboxes-->
+                    <div class="form-item">
+                        <p class="p-form">Select your favourite types of tea:</p>
+                        <label for="black-tea"> <input id="black-tea" value="black-tea" name="tea-types" type="checkbox" class="checkbox">Black tea</label>
+                        <label for="green-tea"> <input id="green-tea" value="green-tea" name="tea-types" type="checkbox" class="checkbox">Green tea</label>
+                        <label for="white-tea"> <input id="white-tea" value="white-tea" name="tea-types" type="checkbox" class="checkbox">White tea</label>
+                        <label for="roiboos-tea"> <input id="roiboos-tea" value="roiboos-tea" name="tea-types" type="checkbox" class="checkbox">Roiboos tea</label>
+                        <label for="matcha-tea"> <input id="matcha-tea" value="matcha-tea" name="tea-types" type="checkbox" class="checkbox">Matcha</label>
+                        <label for="pu-erh-tea"> <input id="pu-erh-tea" value="pu-erh-tea" name="tea-types" type="checkbox"class="checkbox">Pu-erh tea</label>
+                        <label for="herbal-tea"> <input id="herbal-tea" value="herbal-tea" name="tea-types" type="checkbox" class="checkbox">Herbal tea</label>
+                    </div>
+                    <!--Text for for additional comments-->
+                    <div class="form-item">
+                        <label for="comments">Please enter any additional information about your tea preferences below</label>
+                        <textarea id="comments" value="comments" name="comments" placeholder="Additional information..." rows="10" cols="50"></textarea>
+                    </div>                
+                    <!--Submit button-->
+                    <div class="form-item">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </body>
+
+</html>
